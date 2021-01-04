@@ -15,7 +15,7 @@ library(dplyr)
 #********************************************************************************************************************
 #Remove columns with null values
 
-insurance <- read.csv("C:\\Users\\jyoth\\Desktop\\SEM 2\\Bhogle Sir's\\R Proj\\Insurance\\Final\\insurance_claims.csv")
+insurance <- read.csv("C:\\Users\\Desktop\\R Proj\\Insurance\\Final\\insurance_claims.csv")
 null_cols = unique(names(insurance)[which(insurance == '?', arr.ind=T)[, "col"]])
 insurance[,c(null_cols,"policy_number")]<-NULL
 
