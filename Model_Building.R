@@ -5,7 +5,7 @@
 """
 
 library(DescTools)    #For Cramer's V
-insurance <- read.csv("C:\\Users\\admin\\Desktop\\SJC\\Projects\\R Proj\\Insurance\\insurance_claims.csv")
+insurance <- read.csv("C:\\Users\\Desktop\\R Proj\\Insurance\\insurance_claims.csv")
 
 #Get column names having '?' values
 null_cols = unique(names(insurance)[which(insurance == '?', arr.ind=T)[, "col"]])
